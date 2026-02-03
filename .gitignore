@@ -1,0 +1,30 @@
+# Секреты
+.env
+
+# Виртуальное окружение
+venv/
+.venv/
+env/
+kinobot/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# База данных (можно раскомментировать, если не хранить БД в репо)
+# db/*.sqlite3
+# *.sqlite3
+
+# IDE / ОС
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
