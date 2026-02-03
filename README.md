@@ -64,47 +64,6 @@ Telegram-бот для поиска фильмов по настроению: к
 
 Токен Telegram: [@BotFather](https://t.me/BotFather) → `/newbot`.  
 Ключ КиноПоиска: [kinopoisk.dev](https://kinopoisk.dev/).
-
-## Как залить проект на Git
-
-1. **Убедись, что секреты не попадут в репозиторий**  
-   В корне проекта должен быть файл **`.gitignore`** (он уже добавлен в репозиторий). В нём обязательно есть строка `.env` — так твой токен и ключ API не окажутся на GitHub/GitLab.
-
-2. **Инициализируй репозиторий** (если ещё не инициализирован):
-   ```bash
-   cd "c:\Users\shurf\Desktop\вк тимс боты\кинобот"
-   git init
-   ```
-
-3. **Добавь файлы и первый коммит:**
-   ```bash
-   git add .
-   git status
-   ```
-   Проверь, что в списке **нет** файла `.env`. Если он есть — значит `.gitignore` не сработал или его нет; не коммить `.env`.
-   ```bash
-   git commit -m "Кинобот: поиск фильмов по настроению, случайный, поиск по названию, история в SQLite"
-   ```
-
-4. **Создай репозиторий на GitHub (или GitLab/Bitbucket):**
-   - Зайди на [github.com](https://github.com) → New repository.
-   - Имя, например, `kinobot`. Не добавляй README, .gitignore или лицензию — они уже есть локально.
-
-5. **Подключи remote и запушь:**
-   ```bash
-   git remote add origin https://github.com/ТВОЙ_ЛОГИН/kinobot.git
-   git branch -M main
-   git push -u origin main
-   ```
-   Вместо `ТВОЙ_ЛОГИН/kinobot` подставь свой логин и имя репозитория. Если используешь SSH:
-   ```bash
-   git remote add origin git@github.com:ТВОЙ_ЛОГИН/kinobot.git
-   ```
-
-6. **Дальше:** после изменений:
-   ```bash
-   git add .
-   git commit -m "Описание изменений"
    git push
    ```
 
